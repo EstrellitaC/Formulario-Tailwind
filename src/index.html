@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-white flex justify-center items-center h-screen font-['Poppins']">
+    <audio id="background-music" autoplay loop>
+        <source src="/audio/Magnetic_(youconvert.net).mp3" type="audio/mp3">
+        Tu navegador no soporta el reproductor de audio.
+    </audio>
+    <div class="w-96 bg-white p-8 rounded-[20px] shadow-xl">
+        <div class="w-full mb-4 flex justify-center">
+        <img class="w-24 rounded-[50%] border-4 shadow-sm shadow-black" src="/img/icono.jpg" alt="">
+    </div>
+    <div class="w-full mb-6 flex flex-col items-center">
+        <h1 class="font-bold text-[30px]">LOGIN</h1>
+        <p class="text-[15px]">¡Hecho por un gato!</p>
+    </div>
+    <form class="flex flex-col items-center" action="">
+        <div class="flex gap-3 shadow-sm rounded-[20px] py-4 px-5 mb-5 w-full">
+            <div>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <input class="w-full outline-none" type="text" placeholder="Username">
+        </div>
+        <div class="flex gap-3 shadow-sm rounded-[20px] py-4 px-5 mb-6 w-full">
+            <div>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <input class="w-full outline-none" type="text" placeholder="Password">
+        </div>
+        <button class="bg-black py-2 w-full rounded-[40px] font-bold text-white mb-5">Ingresar</button>
+    </form>
+    <div class="w-full flex gap-2 justify-center">
+        <a class="text-gray-500" href="#" >Olvidaste la contraseña?</a>
+        <a href="#">Crear cuenta</a>
+    </div>
+    <script>
+        window.addEventListener('click', () => {
+        const music = document.getElementById('background-music');
+        music.play();
+        });
+    </script>
+</body>
+</html>
